@@ -1,0 +1,77 @@
+@mixin max-screen($res)
+{
+  @media screen and (max-width: $res)
+  {
+    @content;
+  }
+}
+
+
+header {
+  display: flex;
+  width: 100%;
+  z-index: 99;
+  background-color: #FFFFFF;
+  font-family: Inter;
+  display: flex;
+  .logo {
+    padding: 30px 0 30px 73px;
+  }
+  .nav-bar {
+    text-align: center;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items: center;
+    position: relative;
+    margin: auto;
+    padding-right: 80px;
+    ul {
+      padding: 0;
+      text-align: center;
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      li {
+        display: block;
+        a {
+          font-size: 18px;
+          display: inline-block;
+          text-align: center;
+          text-decoration: none;
+          color: #000;
+          padding: 18px;
+          text-transform: uppercase;
+
+          &:nth-child(2):after {
+            content: url("../Images/down.svg");
+            padding-left: 4px;
+
+          }
+        }
+      }
+    }
+  }
+  .nav-icons {
+    position: relative;
+    right: 102px;
+    top: 29px;
+    a:first-child {
+      margin-right: 27px;
+    }
+  }
+  button.menu-btn {
+    display:none;
+    color: black;
+  }
+}
+
+
+
+
+
+
+

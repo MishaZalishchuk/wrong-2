@@ -1,0 +1,59 @@
+@media screen and (max-width: 1000px) {
+    header .nav-icons {
+        position: absolute;
+        right: 40px;
+    }
+}
+
+
+
+@media only screen and (max-width: 955px){
+    .navbar-demo  button.menu-btn {
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: unset;
+        border: 0;
+        font-size: 26px;
+        display:block;
+        padding: 23px;
+        color: #fff;
+        outline: none;
+    }
+    .navbar-demo{
+        height:100%;
+        z-index: 999;
+    }
+    .navbar-demo .nav-bar {
+        left: -950px;
+        background-color: rosybrown;
+        transition: 1s;
+        height: 100%;
+    }
+
+    .navbar-demo.open-nav  .nav-bar{
+        left: 0;
+        width: 100%;
+        transition: left 0.5s;
+        height: 100%;
+    }
+
+    .navbar-demo .nav-bar ul li a {
+        display: block;
+        color: #fff;
+    }
+    .navbar-demo.open-nav button.menu-btn i:before {
+        content: '\f00d ';
+    }
+    .fa-bars:before, .fa-navicon:before {
+        color: black;
+    }
+
+    .nav-icons {
+        margin: auto;
+    }
+
+    header .nav-icons {
+        right: 20%;
+    }
+}
